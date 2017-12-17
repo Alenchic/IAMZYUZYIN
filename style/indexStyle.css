@@ -1,0 +1,150 @@
+@import url(reset.css);
+@import url(headerStyle.css);
+.container {
+  max-width: 80%;
+  min-width: 640px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.productsList {
+  padding-top: 65px;
+  display: grid;
+  grid-template-columns: repeat(4, 25%); }
+  .productsList .product {
+    border: 1px solid lightgray; }
+    .productsList .product .productImage {
+      margin: 5px; }
+    .productsList .product .productName, .productsList .product .orderProduct {
+      padding: 5px; }
+    .productsList .product div {
+      display: flex;
+      flex-direction: column; }
+    .productsList .product .productCost {
+      display: flex;
+      flex-direction: row; }
+
+.productImage img {
+  height: 250px; }
+
+.orderProduct {
+  display: flex;
+  flex-direction: row; }
+
+.basketSection {
+  display: flex;
+  flex-direction: row;
+  padding-top: 55px; }
+  .basketSection .info {
+    width: 25%;
+    border-right: 1px solid lightgray;
+    margin-top: 10px; }
+    .basketSection .info .userPhoto {
+      width: 100%;
+      border-bottom: 1px solid lightgray; }
+      .basketSection .info .userPhoto img {
+        width: 100%;
+        background-image: url("../img/default-avatar.jpeg.png");
+        background-size: 100%; }
+  .basketSection .basket {
+    width: 75%;
+    padding: 10px; }
+    .basketSection .basket .basketProduct {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 10px; }
+      .basketSection .basket .basketProduct .basketProduct_Photo {
+        width: 120px;
+        height: 120px;
+        border: 1px solid lightgray;
+        background-image: url("../img/img-error.png");
+        background-size: 120px 120px; }
+        .basketSection .basket .basketProduct .basketProduct_Photo img {
+          width: 120px;
+          height: 120px; }
+      .basketSection .basket .basketProduct .basketProduct_Info {
+        display: flex;
+        flex-direction: column;
+        width: 70%; }
+        .basketSection .basket .basketProduct .basketProduct_Info span {
+          padding: 3px 10px;
+          width: 100%; }
+      .basketSection .basket .basketProduct .productQuantity {
+        display: flex;
+        flex-direction: row; }
+        .basketSection .basket .basketProduct .productQuantity .costBlock {
+          display: flex;
+          flex-direction: row; }
+    .basketSection .basket .orderBasket {
+      display: flex;
+      justify-content: right;
+      align-items: flex-end; }
+      .basketSection .basket .orderBasket button {
+        margin-left: 15px; }
+
+.questionSection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 65px; }
+  .questionSection .writeQuestions {
+    margin: 0 auto;
+    width: 605px; }
+    .questionSection .writeQuestions form {
+      align-items: right; }
+      .questionSection .writeQuestions form textarea {
+        width: 600px;
+        height: 150px;
+        font: 16px Calibri;
+        text-indent: 5px;
+        resize: none; }
+      .questionSection .writeQuestions form button {
+        align-content: right;
+        width: 100px;
+        margin: 5px; }
+  .questionSection .questions {
+    display: flex;
+    flex-direction: column;
+    width: 580px;
+    margin: 0 auto; }
+    .questionSection .questions .question {
+      display: flex;
+      flex-direction: row; }
+      .questionSection .questions .question .photo {
+        width: 50px; }
+        .questionSection .questions .question .photo img {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%; }
+      .questionSection .questions .question .questionBlock {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        width: 97%; }
+        .questionSection .questions .question .questionBlock .Name {
+          font: 18px Calibri; }
+        .questionSection .questions .question .questionBlock .questionText {
+          font: 16px "Calibri Light"; }
+        .questionSection .questions .question .questionBlock a {
+          margin: 10px 0 0 0; }
+        .questionSection .questions .question .questionBlock form {
+          display: flex;
+          flex-direction: row;
+          align-items: flex-end; }
+          .questionSection .questions .question .questionBlock form textarea {
+            resize: none;
+            width: 350px;
+            height: 100px;
+            margin-right: 15px;
+            font: 16px Calibri;
+            text-indent: 5px; }
+    .questionSection .questions hr {
+      width: 100%;
+      color: lightgray; }
+
+button {
+  height: 35px;
+  background-color: #E4EFD1;
+  border: 1px solid darkgrey;
+  color: #74924C; }
+
+/*# sourceMappingURL=indexStyle.css.map */

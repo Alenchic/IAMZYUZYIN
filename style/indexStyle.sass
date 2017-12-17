@@ -1,0 +1,153 @@
+@import "reset.css"
+@import "headerStyle.css"
+
+.container
+  max-width: 80%
+  min-width: 640px
+  margin: 0 auto
+  padding: 0 10px
+
+.productsList
+  padding-top: 65px
+  display: grid
+  grid-template-columns: repeat(4, 25%)
+  .product
+    border: 1px solid lightgray
+    .productImage
+      margin: 5px
+    .productName, .orderProduct
+      padding: 5px
+    & div
+      display: flex
+      flex-direction: column
+    .productCost
+      display: flex
+      flex-direction: row
+
+.productImage img
+  height: 250px
+
+.orderProduct
+  display: flex
+  flex-direction: row
+
+.basketSection
+  display: flex
+  flex-direction: row
+  padding-top: 55px
+  .info
+    width: 25%
+    border-right: 1px solid lightgray
+    margin-top: 10px
+    .userPhoto
+      width: 100%
+      border-bottom: 1px solid lightgray
+      img
+        width: 100%
+        background-image: url("../img/default-avatar.jpeg.png")
+        background-size: 100%
+    .userInfo
+
+
+  .basket
+    width: 75%
+    padding: 10px
+    .basketProduct
+      display: flex
+      flex-direction: row
+      width: 100%
+      margin-top: 10px
+      .basketProduct_Photo
+        width: 120px
+        height: 120px
+        border: 1px solid lightgray
+        background-image: url("../img/img-error.png")
+        background-size: 120px 120px
+        & img
+          width: 120px
+          height: 120px
+      .basketProduct_Info
+        display: flex
+        flex-direction: column
+        width: 70%
+        & span
+          padding: 3px 10px
+          width: 100%
+      .productQuantity
+        display: flex
+        flex-direction: row
+        & .costBlock
+          display: flex
+          flex-direction: row
+    .orderBasket
+      display: flex
+      justify-content: right
+      align-items: flex-end
+      & button
+        margin-left: 15px
+
+.questionSection
+  display: flex
+  flex-direction: column
+  padding-top: 65px
+  .writeQuestions
+    margin: 0 auto
+    width: 605px
+    form
+      align-items: right
+      & textarea
+        width: 600px
+        height: 150px
+        font: 16px Calibri
+        text-indent: 5px
+        resize: none
+      & button
+        align-content: right
+        width: 100px
+        margin: 5px
+  .questions
+    display: flex
+    flex-direction: column
+    width: 580px
+    margin: 0 auto
+    .question
+      display: flex
+      flex-direction: row
+      .photo
+        width: 50px
+        img
+          height: 50px
+          width: 50px
+          border-radius: 50%
+      .questionBlock
+        display: flex
+        flex-direction: column
+        padding-left: 10px
+        width: 97%
+        .Name
+          font: 18px Calibri
+        .questionText
+          font: 16px "Calibri Light"
+        a
+          margin: 10px 0 0 0
+        form
+          display: flex
+          flex-direction: row
+          align-items: flex-end
+          textarea
+            resize: none
+            width: 350px
+            height: 100px
+            margin-right: 15px
+            font: 16px Calibri
+            text-indent: 5px
+
+    & hr
+      width: 100%
+      color: lightgray
+
+button
+  height: 35px
+  background-color: #E4EFD1
+  border: 1px solid darkgrey
+  color: #74924C

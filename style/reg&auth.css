@@ -1,0 +1,32 @@
+@import url(reset.css);
+.regauth {
+  padding-top: 100px; }
+
+.registration {
+  width: 300px;
+  border: 1px solid lightgray;
+  margin: 0 auto; }
+  .registration .title {
+    background-color: #E4EFD1;
+    font: 24px Calibri;
+    color: #74924C; }
+  .registration div {
+    width: 280px;
+    padding: 10px; }
+    .registration div p {
+      margin-bottom: 5px;
+      font: 16px Calibri; }
+    .registration div input {
+      height: 25px;
+      width: 80%;
+      text-indent: 5px; }
+      .registration div input:focus {
+        border: 1px solid #74924C; }
+
+button {
+  height: 35px;
+  background-color: #E4EFD1;
+  border: 1px solid darkgrey;
+  color: #74924C; }
+
+/*# sourceMappingURL=reg&auth.css.map */

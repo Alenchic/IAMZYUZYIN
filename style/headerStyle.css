@@ -1,0 +1,25 @@
+header {
+  width: 80%;
+  min-width: 640px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #E4EFD1;
+  position: fixed; }
+  header nav ul, header section ul {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    background: #E4EFD1;
+    padding-left: 0; }
+    header nav ul a, header section ul a {
+      padding: 20px 30px;
+      display: block;
+      color: #74924C;
+      border-right: 1px solid #BAD78B;
+      background: rgba(186, 215, 139, 0.3); }
+      header nav ul a:hover, header section ul a:hover {
+        background: #BAD78B; }
+
+/*# sourceMappingURL=headerStyle.css.map */
